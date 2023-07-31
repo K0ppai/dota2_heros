@@ -1,19 +1,25 @@
-// import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
-import HerosList from './components/heroList';
 import { fetchHeros } from './redux/heroStats/heroStatsSlicer';
+import NavBar from './components/NavBar';
+import Home from './pages/Home';
+import Detail from './pages/Detail';
 
 function App() {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchHeros());
-  }, [dispatch]);
+  }, []);
+
   return (
-    <div>
-      <h1>App</h1>
-      <HerosList />
-    </div>
+    <>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/detail" element={<Detail />} />
+      </Routes>
+    </>
   );
 }
 
