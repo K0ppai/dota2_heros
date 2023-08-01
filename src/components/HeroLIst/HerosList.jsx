@@ -3,7 +3,7 @@
 
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
-import Hero from '../Hero';
+import Hero from '../hero';
 
 const HerosList = () => {
   let heros = useSelector((state) => state.heros.heros);
