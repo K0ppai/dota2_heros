@@ -1,4 +1,5 @@
 /* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable import/no-unresolved */
 
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
