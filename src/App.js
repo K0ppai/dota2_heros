@@ -13,13 +13,13 @@ function App() {
   }, []);
 
   return (
-    <>
+    <div className="bg-detail-bg bg-cover bg-no-repeat min-h-screen">
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/detail" element={<Detail />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
