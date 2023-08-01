@@ -14,7 +14,7 @@ const Hero = (props) => {
   return (
     <li
       key={hero.id}
-      className="flex flex-col border-2 border-x-slate-800 justify-center items-center py-2"
+      className="flex flex-col border-2 border-x-slate-800 justify-center items-center py-2 hero"
     >
       <button type="button" onClick={navigateToDetail} className="mt-3">
         <img

@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
-import Hero from './Hero';
+import Hero from '../Hero';
 
 const HerosList = () => {
   let heros = useSelector((state) => state.heros.heros);
@@ -31,11 +31,14 @@ const HerosList = () => {
       </form>
       <ul
         className={`${heros.length === 0 ? 'h-[100vh]' : 'grid grid-cols-2 md:grid-cols-5 gap-2'}`}
+        data-testid="heros-list"
       >
         {heros.length === 0 ? (
           <p className="text-7xl text-slate-400 text-center mt-6">Hero Not Found</p>
         ) : (
-          heros.map((hero) => <Hero key={hero.id} {...hero} />)
+          heros.map((hero) => (
+            <Hero key={hero.id} {...hero} data-testid={`hero-${hero.localized_name}`} />
+          ))
         )}
       </ul>
     </div>

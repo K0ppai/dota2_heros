@@ -1,4 +1,4 @@
-import HerosList from '../components/HerosList';
+import HerosList from '../components/HeroLIst/HerosList';
 
 const Home = () => (
   <>
