@@ -17,10 +17,16 @@ export const fetchHeros = createAsyncThunk('heros/fetchHeros', async () => {
 const herosSlice = createSlice({
   name: 'heros',
   initialState,
-  reducers: {},
+  reducers: {
+    setHeros: (state, action) => ({
+      ...state,
+      heros: action.payload,
+    }),
+  },
   extraReducers: (builder) => {
     builder.addCase(fetchHeros.fulfilled, (state, action) => ({ ...state, heros: action.payload }));
   },
 });
 
 export default herosSlice.reducer;
+export const { setHeros } = herosSlice.actions;
