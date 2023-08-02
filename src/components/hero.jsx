@@ -1,5 +1,3 @@
-/* eslint-disable react/jsx-one-expression-per-line */
-
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -29,7 +27,10 @@ const Hero = (props) => {
             className="w-8"
           />
           <span className="text-white font-semibold text-lg ps-3">{hero.base_str}</span>
-          <span className="text-sm ps-2 text-gray-400">+{hero.str_gain}</span>
+          <span className="text-sm ps-2 text-gray-400">
+            +
+            {hero.str_gain}
+          </span>
         </div>
         <div className="flex justify-start items-center my-1">
           <img
@@ -38,7 +39,10 @@ const Hero = (props) => {
             className="w-8"
           />
           <span className="text-white font-semibold text-lg ps-3">{hero.base_agi}</span>
-          <span className="text-sm ps-2 text-gray-400">+{hero.agi_gain}</span>
+          <span className="text-sm ps-2 text-gray-400">
+            +
+            {hero.agi_gain}
+          </span>
         </div>
         <div className="flex justify-start items-center my-1">
           <img
@@ -47,7 +51,10 @@ const Hero = (props) => {
             className="w-8"
           />
           <span className="text-white font-semibold text-lg ps-3">{hero.base_int}</span>
-          <span className="text-sm ps-2 text-gray-400">+{hero.int_gain}</span>
+          <span className="text-sm ps-2 text-gray-400">
+            +
+            {hero.int_gain}
+          </span>
         </div>
         <p className="text-center text-white text-xl font-semibold mt-2">{hero.localized_name}</p>
       </button>

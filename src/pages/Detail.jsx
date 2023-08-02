@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 
@@ -49,31 +48,37 @@ const Detail = () => {
           <h1 className="col-span-3 text-center font-bold text-2xl">STATS</h1>
           <div>
             <h1 className="text-center my-2">ATTACK</h1>
-            <div className="flex justify-around bg-detail-bg">
+            <div className="flex justify-between px-4 bg-detail-bg">
               <img
+                className="mr-2"
                 src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_damage.png"
                 alt="attack_icon"
               />
               <span>
-                {hero.base_attack_min}-{hero.base_attack_max}
+                {hero.base_attack_min}
+                -
+                {hero.base_attack_max}
               </span>
             </div>
-            <div className="flex justify-around bg-detail-bg">
+            <div className="flex justify-between px-4 bg-detail-bg">
               <img
+                className="mr-2"
                 src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_attack_time.png"
                 alt="attack_time_icon"
               />
               <span>{hero.attack_rate}</span>
             </div>
-            <div className="flex justify-around bg-detail-bg">
+            <div className="flex justify-between px-4 bg-detail-bg">
               <img
+                className="mr-2"
                 src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_attack_range.png"
                 alt="attack_range_icon"
               />
               <span>{hero.attack_range}</span>
             </div>
-            <div className="flex justify-around bg-detail-bg">
+            <div className="flex justify-between px-4 bg-detail-bg">
               <img
+                className="mr-2"
                 src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_projectile_speed.png"
                 alt="projectile_speed_icon"
               />
@@ -82,15 +87,17 @@ const Detail = () => {
           </div>
           <div>
             <h1 className="text-center my-2">DEFENSE</h1>
-            <div className="flex justify-around bg-detail-bg">
+            <div className="flex justify-between px-4 bg-detail-bg">
               <img
+                className="mr-2"
                 src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_armor.png"
                 alt="icon_armor"
               />
               <span>{hero.base_armor}</span>
             </div>
-            <div className="flex justify-around bg-detail-bg">
+            <div className="flex justify-between px-4 bg-detail-bg">
               <img
+                className="mr-2"
                 src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_magic_resist.png"
                 alt="icon_magic_resist"
               />
@@ -99,20 +106,24 @@ const Detail = () => {
           </div>
           <div>
             <h1 className="text-center my-2">MOBILITY</h1>
-            <div className="flex justify-around bg-detail-bg">
+            <div className="flex justify-between px-4 bg-detail-bg">
               <img
+                className="mr-2"
                 src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_movement_speed.png"
                 alt="icon_movement_speed"
               />
               <span>{hero.move_speed}</span>
             </div>
-            <div className="flex justify-around bg-detail-bg">
+            <div className="flex justify-between px-4 bg-detail-bg">
               <img
+                className="mr-2"
                 src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react//heroes/stats/icon_vision.png"
                 alt="icon_vision"
               />
               <span>
-                {hero.day_vision}/{hero.night_vision}
+                {hero.day_vision}
+                /
+                {hero.night_vision}
               </span>
             </div>
           </div>

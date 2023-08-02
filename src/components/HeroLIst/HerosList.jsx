@@ -1,6 +1,3 @@
-/* eslint-disable react/jsx-props-no-spreading */
-/* eslint-disable import/no-unresolved */
-
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import Hero from '../hero';
@@ -31,13 +28,16 @@ const HerosList = () => {
         />
       </form>
       <ul
-        className={`${heros.length === 0 ? 'h-[100vh]' : 'grid grid-cols-2 gap-0 md:grid-cols-5 md:gap-2'}`}
+        className={`${
+          heros.length === 0 ? 'h-[100vh]' : 'grid grid-cols-2 gap-0 md:grid-cols-5 md:gap-2'
+        }`}
         data-testid="heros-list"
       >
         {heros.length === 0 ? (
           <p className="text-7xl text-slate-400 text-center mt-6">Hero Not Found</p>
         ) : (
           heros.map((hero) => (
+            /* eslint-disable-next-line react/jsx-props-no-spreading */
             <Hero key={hero.id} {...hero} data-testid={`hero-${hero.localized_name}`} />
           ))
         )}
