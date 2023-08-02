@@ -21,17 +21,17 @@ const HerosList = () => {
 
   return (
     <div>
-      <form className="flex justify-center pt-4 bg-transparent pb-4">
+      <form className="flex justify-center bg-transparent pb-4">
         <input
           type="text"
           placeholder="Search hero by name..."
-          className="bg-transparent border-2 border-gray-300 rounded-lg px-4 py-2 text-black focus:outline-none focus:border-orange-500 w-[50%]"
+          className="bg-transparent border-2 border-gray-300 rounded-lg px-4 py-2 text-black focus:outline-none focus:border-orange-500 w-[70%]"
           value={inputValue}
           onChange={handleChange}
         />
       </form>
       <ul
-        className={`${heros.length === 0 ? 'h-[100vh]' : 'grid grid-cols-2 md:grid-cols-5 gap-2'}`}
+        className={`${heros.length === 0 ? 'h-[100vh]' : 'grid grid-cols-2 gap-0 md:grid-cols-5 md:gap-2'}`}
         data-testid="heros-list"
       >
         {heros.length === 0 ? (

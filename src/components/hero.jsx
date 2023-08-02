@@ -49,7 +49,7 @@ const Hero = (props) => {
           <span className="text-white font-semibold text-lg ps-3">{hero.base_int}</span>
           <span className="text-sm ps-2 text-gray-400">+{hero.int_gain}</span>
         </div>
-        <p className="text-center text-white text-2xl font-bold mt-2">{hero.localized_name}</p>
+        <p className="text-center text-white text-xl font-semibold mt-2">{hero.localized_name}</p>
       </button>
     </li>
   );
