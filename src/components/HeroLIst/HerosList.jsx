@@ -22,7 +22,7 @@ const HerosList = () => {
         <input
           type="text"
           placeholder="Search hero by name..."
-          className="bg-transparent border-2 border-gray-300 rounded-lg px-4 py-2 text-black focus:outline-none focus:border-orange-500 w-[70%]"
+          className="bg-transparent border-2 border-gray-300 rounded-lg px-4 py-2 text-gray-400 focus:outline-none focus:border-orange-500 w-[70%]"
           value={inputValue}
           onChange={handleChange}
         />
