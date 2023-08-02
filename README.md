@@ -155,7 +155,8 @@ For tests, run:
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[Mobile Responsiveness]**
+- [ ] **Desktop Responsiveness**
+- [ ] **Develop Styling to close to [dota2.com](https://www.dota2.com/home)**
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
