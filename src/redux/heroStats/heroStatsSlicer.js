@@ -24,7 +24,12 @@ const herosSlice = createSlice({
     }),
   },
   extraReducers: (builder) => {
-    builder.addCase(fetchHeros.fulfilled, (state, action) => ({ ...state, heros: action.payload }));
+    builder.addCase(fetchHeros.pending, (state) => ({ ...state, status: 'loading' }));
+    builder.addCase(fetchHeros.fulfilled, (state, action) => ({
+      ...state,
+      status: 'succeeded',
+      heros: action.payload,
+    }));
   },
 });
 
