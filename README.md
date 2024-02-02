@@ -14,7 +14,6 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
-  - [💁 Video Presentation](#video-presentation)
 - [💻 Getting Started](#getting-started)
   - [Prerequisites](#prerequisites)
   - [Setup](#setup)
@@ -64,13 +63,6 @@
 
 
 - Link: [Live Demo](https://dota2-heros.netlify.app/)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 💁 Video Presentation <a name="video-presentation"></a>
-
-
-- Link: [Video](https://drive.google.com/file/d/1CWAVFNyvNtwdNEMr4xnd6HV5cUuydLGF/view?usp=drive_link)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
