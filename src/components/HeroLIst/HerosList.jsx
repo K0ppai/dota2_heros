@@ -4,6 +4,7 @@ import Hero from '../hero';
 
 const HerosList = () => {
   let heros = useSelector((state) => state.heros.heros);
+  const status = useSelector((state) => state.heros.status);
   const [inputValue, setInputValue] = useState('');
 
   const handleChange = (e) => {
@@ -33,13 +34,19 @@ const HerosList = () => {
         }`}
         data-testid="heros-list"
       >
-        {heros.length === 0 ? (
-          <p className="text-7xl text-slate-400 text-center mt-6">Hero Not Found</p>
+        {status === 'loading' ? (
+          <p className="text-7xl text-slate-400 text-center mt-6">Loading...</p>
         ) : (
-          heros.map((hero) => (
-            /* eslint-disable-next-line react/jsx-props-no-spreading */
-            <Hero key={hero.id} {...hero} data-testid={`hero-${hero.localized_name}`} />
-          ))
+          <>
+            {heros.length === 0 ? (
+              <p className="text-7xl text-slate-400 text-center mt-6">Hero Not Found</p>
+            ) : (
+              heros.map((hero) => (
+                /* eslint-disable-next-line react/jsx-props-no-spreading */
+                <Hero key={hero.id} {...hero} data-testid={`hero-${hero.localized_name}`} />
+              ))
+            )}
+          </>
         )}
       </ul>
     </div>
